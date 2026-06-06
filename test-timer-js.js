@@ -220,9 +220,9 @@ function revealBlocks() {
     setTimeout(() => {
         blocksArray.forEach((block) => {
             block.classList.remove("flipped");
-            blockContainer.classList.remove("no-clicking");
-            startTimer();
         })
+        blockContainer.classList.remove("no-clicking");
+         startTimer();
     }, 2000)
 }
 
