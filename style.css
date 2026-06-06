@@ -104,6 +104,9 @@ body{
     text-align: center;
     backface-visibility: hidden;
     border: 5px solid #a8b0d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 
 .game-blocks-container .game-block.flipped,
