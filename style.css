@@ -72,21 +72,17 @@ body{
     background-color: #333;
     line-height: 200px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .game-blocks-container .game-block .front:before {
     content: "?";
     position: absolute;
-    transform: translateX(-50%);
     color: white;
     font-size: 140px;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .game-blocks-container .game-block .back {
@@ -110,9 +106,6 @@ body{
     text-align: center;
     backface-visibility: hidden;
     border: 5px solid #a8b0d9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 } 
 
 .game-blocks-container .game-block.flipped,
