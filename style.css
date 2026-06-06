@@ -81,6 +81,9 @@ body{
     color: white;
     font-size: 140px;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .game-blocks-container .game-block .back {
