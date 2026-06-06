@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memory game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="control-btns">
+        <span>Start Game</span>
+    </div>
+
+    <div class="main-container">
+        <div class="name">
+            Hello: <span></span>
+        </div>
+        <div class="timer">
+            Your time left: <span>110</span> seconds
+        </div>
+        <div class="tries">
+            wrong tries: <span>0</span>
+        </div>
+    </div>
+
+    <div class="game-blocks-container">
+        <div class="game-block" data-animals="buffalo">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/buffalo.png" alt="buffalo">
+            </div>
+        </div>
+        <div class="game-block" data-animals="buffalo">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/buffalo.png" alt="buffalo">
+            </div>
+        </div>
+        <div class="game-block" data-animals="crocodile">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/crocodile.png" alt="crocodile">
+            </div>
+        </div>
+        <div class="game-block" data-animals="crocodile">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/crocodile.png" alt="crocodile">
+            </div>
+        </div>
+        <div class="game-block" data-animals="flamingo">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/flamingo.png" alt="flamingo">
+            </div>
+        </div>
+        <div class="game-block" data-animals="flamingo">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/flamingo.png" alt="flamingo">
+            </div>
+        </div>
+        <div class="game-block" data-animals="fox">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/fox.png" alt="fox">
+            </div>
+        </div>
+        <div class="game-block" data-animals="fox">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/fox.png" alt="fox">
+            </div>
+        </div>
+        <div class="game-block" data-animals="sheep">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/sheep.png" alt="sheep">
+            </div>
+        </div>
+        <div class="game-block" data-animals="sheep">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/sheep.png" alt="sheep">
+            </div>
+        </div>
+        <div class="game-block" data-animals="zebra">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/zebra.png" alt="zebra">
+            </div>
+        </div>
+        <div class="game-block" data-animals="zebra">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/zebra.png" alt="zebra">
+            </div>
+        </div>
+        <div class="game-block" data-animals="hippopotamus">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/hippopotamus.png" alt="hippopotamus">
+            </div>
+        </div>
+        <div class="game-block" data-animals="hippopotamus">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/hippopotamus.png" alt="hippopotamus">
+            </div>
+        </div>
+        <div class="game-block" data-animals="bear">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/bear.png" alt="bear">
+            </div>
+        </div>
+        <div class="game-block" data-animals="bear">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/bear.png" alt="bear">
+            </div>
+        </div>
+        <div class="game-block" data-animals="cheetah">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/cheetah.png" alt="cheetah">
+            </div>
+        </div>
+        <div class="game-block" data-animals="cheetah">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/cheetah.png" alt="cheetah">
+            </div>
+        </div>
+        <div class="game-block" data-animals="deer">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/deer.png" alt="deer">
+            </div>
+        </div>
+        <div class="game-block" data-animals="deer">
+            <div class="front face"></div>
+            <div class="back face">
+                <img src="imgs/deer.png" alt="deer">
+            </div>
+        </div>
+    </div> 
+    <div class="end-game">
+        <div class="wrapper">
+            <img src="imgs/duck.png" alt="Game Over">
+            <h1>Game Over,<br> Your time is up!</h1>
+            <p id="end-game-msg">you have succussfuly filpped <span id="matched-blocks-number"></span> out of <span class="blocks-number"></span> but you ran out of time! You made <span class="tries-number"></span> wrong tries. Better luck on the next run!</p>
+            <span class="btn-play-again">try again</span>
+        </div>
+    </div>
+
+    <div class="win-game">
+        <div class="wrapper">
+            <img src="imgs/trophy.png" alt="">
+            <h1>congratulations,<br> you won and your socre is :</h1>
+            <p id="win-game-msg">you have succussfuly filpped <span class="blocks-number"></span> with the number of <span class="tries-number"></span> tires, with the time remaning <span id="remaning-time"></span> seconds"</p>
+            <span class="btn-play-again">play again</span>
+        </div>
+    </div>
+
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    
+    <script src="test-timer-js.js"></script>
+</body>
+</html>
